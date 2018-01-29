@@ -1,0 +1,400 @@
+.page-header {
+  background-image: url("../src/blocks/page-header/img/bg-red2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  height: 550px;
+  // box-sizing: border-box;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  &__nav {
+    margin-top: 25px;
+    margin-bottom: 40px;
+
+    &--left {
+      @include clearfix;
+
+      .header-logo {
+        float: left;
+        font-family: 'Caviar Dreams';
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .header-button {
+        float: right;
+      }
+    }
+
+    &--right {
+      display: none;
+    }
+  }
+
+    &__item {
+      padding: 10px;
+
+      &:last-child a {
+        padding-right: 0;
+      }
+    
+      a { 
+        font-weight: 700;
+        color: #fff;
+        padding: 8px 20px;
+        transition: text-shadow 0.3s ease;
+
+        &:hover {
+          text-shadow: 3px 11px 5px rgba(0, 0, 0, 0.5);
+          text-decoration: none;
+          color: #fff;
+        }
+
+        &:focus {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+  }
+
+  &__container {
+    @include col(9);
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 3.5em;
+    font-family: 'Lora', sans-serif;
+    color: #fff;
+    text-shadow: 2px 11px 5px rgba(0, 0, 0, 0.33);
+    margin-bottom: 60px;
+  }
+
+  @include respond-to($md-custom) {
+    .header-button {
+      display: none;
+    }
+
+    &__nav {
+      margin-bottom: 80px;
+    }
+
+    &__title {
+      margin-bottom: 120px;
+    }
+
+    ul {
+      display: block;
+      float: right;
+    }
+
+    &__nav {
+      @include clearfix;
+
+      &--left {
+        float: left;
+      }
+      &--right {
+        float: right;
+        display: block !important;
+
+        li {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 14px;
+          margin-top: 15px;
+          padding: 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  @include respond-to($sm) {
+    &__nav {
+      margin-bottom: 100px;
+    }
+    &__title {
+      margin-bottom: 120px;
+    }
+  }
+
+  @include respond-to($lg) {
+    &__nav {
+      margin-bottom: 80px;
+    }
+
+    &__title {
+      @include col(9);
+      font-size: 4.5em;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+// .page-header {
+//   background-image: url("../src/blocks/page-header/img/bg-red2.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-color: #000;
+  
+//   height: 550px;
+
+//   ul {
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+//   }
+
+//   &__nav {
+//     margin-top: 20px;
+//     margin-bottom: 60px;
+
+//     &--left {
+//       @include clearfix;
+
+//       .header-logo {
+//         float: left;
+//         font-family: 'Caviar Dreams';
+//         font-size: 36px;
+//         font-weight: 700;
+//         color: #fff;
+//       }
+
+//       .header-button {
+//         float: right;
+//       }
+//     }
+
+//     &--right {
+//       display: none;
+//     }
+//   }
+
+//   &__item {
+//     padding: 10px;
+
+//     &:last-child a {
+//       padding-right: 0;
+//     }
+    
+//     a { 
+//       font-weight: 700;
+//       color: #fff;
+//       padding: 8px 20px;
+//       transition: text-shadow 0.3s ease;
+
+//       &:hover {
+//         text-shadow: 3px 11px 5px rgba(0, 0, 0, 0.5);
+//         text-decoration: none;
+//         color: #fff;
+//       }
+
+//       &:focus {
+//         color: #fff;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+
+//   &__title {
+//     margin: 0;
+//     font-size: 3.5em;
+//     font-family: 'Lora', sans-serif;
+//     color: #fff;
+//     text-shadow: 2px 11px 5px rgba(0, 0, 0, 0.33);
+
+//     margin-bottom: 120px;
+//   }
+
+//   &__container {
+//     @include col(9);
+//   }
+
+//   @include respond-to($md-custom) {
+//     .header-button {
+//       display: none;
+//     }
+
+//     &__nav {
+//       margin-bottom: 80px;
+//     }
+
+//     &__title {
+//       margin-bottom: 120px;
+//     }
+
+//     ul {
+//       display: block;
+//       float: right;
+//     }
+
+//     &__nav {
+//       @include clearfix;
+
+//       &--left {
+//         float: left;
+//       }
+//       &--right {
+//         float: right;
+//         display: block !important;
+
+//         li {
+//           display: inline-block;
+//           vertical-align: top;
+//           font-size: 14px;
+//           margin-top: 15px;
+//           padding: 0;
+//           text-transform: uppercase;
+//         }
+//       }
+//     }
+//   }
+
+//     @include respond-to($sm) {
+
+//     &__nav-menu {
+//       margin-bottom: 120px;
+//     }
+//     &__title {
+//       margin-bottom: 120px;
+//     }
+//   }
+
+//   @include respond-to($lg) {
+//     &__title {
+//       @include col(7);
+//       font-size: 4.5em;
+//     }
+//   }
+
+// //   @include respond-to($lg) {
+// //     &__title {
+// //       @include col(7);
+// //       font-size: 4.5em;
+// //     }
+// //   }
+// }
+// // .page-header {
+
+// //   &__nav-menu {
+// //     @include clearfix;
+    
+// //     margin-top: 25px;
+// //     margin-bottom: 60px;
+
+// // }
+// // // .page-header {
+// // //   @include container;
+
+// // // .page-header-container {
+// // //   background-image: url("../src/blocks/page-header/img/bg-red2.jpg");
+// // //   background-color: #000;
+// // //   height: 550px;
+// // // }
+
+// // .page-header {
+// //   max-height: 580px;
+
+// //   background-color: #eee;
+// //   background-image: url("../src/blocks/page-header/img/bg-red2.jpg");
+// //   background-repeat: no-repeat;
+// //   background-position: center;
+
+// //   ul {
+// //     // float: right;
+// //     // display: none;
+// //     margin: 0;
+// //     padding: 0;
+// //   } 
+
+// //   &__container {
+// //     @include col(9);
+// //   }
+
+// //   &__title {
+// //     margin: 0;
+// //     font-size: 3.5em;
+// //     font-family: 'Lora', sans-serif;
+// //     color: #fff;
+// //     text-shadow: 2px 11px 5px rgba(0, 0, 0, 0.33);
+
+// //     margin-bottom: 120px;
+// //   }
+
+// //   &__nav-menu {
+// //     @include clearfix;
+    
+// //     margin-top: 25px;
+// //     margin-bottom: 60px;
+
+// //     &--brand {
+// //       @include col(3);
+// //       font-family: 'Caviar Dreams';
+// //       font-size: 36px;
+// //       font-weight: 700;
+// //       color: #fff;
+// //     }
+// //   }
+
+// //   &__item {
+// //     display: inline-block;
+// //     vertical-align: top;
+// //     margin-top: 15px;
+// //     font-size: 14px;
+// //     text-transform: uppercase;
+
+// //     a {
+// //       font-weight: 700;
+// //       text-decoration: none;
+// //       color: #fff;
+// //       padding: 8px 20px;
+// //       transition: text-shadow 0.3s ease;
+
+// //       &:hover {
+// //         text-shadow: 3px 11px 5px rgba(0, 0, 0, 0.5);
+// //         text-decoration: none;
+// //         color: #fff;
+// //       }
+
+// //       &:focus {
+// //         color: #fff;
+// //         text-decoration: none;
+// //       }
+// //     }
+
+// //     &:last-child a {
+// //       padding-right: 0;
+// //     }
+// //   }
+
+// //   @include respond-to($sm) {
+
+// //     &__nav-menu {
+// //       margin-bottom: 120px;
+// //     }
+// //     &__title {
+// //       margin-bottom: 120px;
+// //     }
+// //   }
+
+// //   @include respond-to($md-custom) {
+// //     ul {
+// //       display: block;
+// //       float: right;
+// //     }
+// //   }
+
+// //   @include respond-to($lg) {
+// //     &__title {
+// //       @include col(7);
+// //       font-size: 4.5em;
+// //     }
+// //   }
+// // }

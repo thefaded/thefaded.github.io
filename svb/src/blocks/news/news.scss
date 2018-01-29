@@ -1,0 +1,7 @@
+.news {
+
+  &__title {
+    @include title-big;
+    margin-top: 0;
+  }
+}

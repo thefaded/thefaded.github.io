@@ -1,0 +1,18 @@
+.contacts {
+  &__fluid {
+    background-color: $dark-blue;
+    @include clearfix;
+  }
+
+  &__title {
+    @include title-big;
+  }
+
+  @include respond-to($lg) {
+    &__fluid {
+      background-image: url('../src/blocks/contacts/img/background.jpg');
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
+  }
+}

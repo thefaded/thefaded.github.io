@@ -1,0 +1,16 @@
+.footer {
+  &__copyright {
+    font-size: 14px;
+    color: $black;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  @include respond-to($lg) {
+    &__copyright {
+      @include col(5);
+      text-align: left;
+      margin: 35px 0px;
+    }
+  }
+}

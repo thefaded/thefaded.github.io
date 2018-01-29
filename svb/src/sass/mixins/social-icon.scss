@@ -1,0 +1,22 @@
+@mixin social-icon() {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  color: transparent;
+  background-size: cover;
+  margin-right: 10px;
+  overflow: hidden;
+  &:hover,
+  &:focus {
+    color: transparent;
+  }
+
+  @include respond-to($lg) {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

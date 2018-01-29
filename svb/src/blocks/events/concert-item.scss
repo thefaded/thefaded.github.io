@@ -1,0 +1,89 @@
+.concerts {
+  box-sizing: border-box;
+  background-color: red;
+  height: 485px;
+  padding: 70px 0px;
+  margin-bottom: 40px;
+  background: #bb1623 url('../src/blocks/events/img/background.jpg') no-repeat bottom center;
+  position: relative;
+
+  &__man--big {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+  }
+
+  @include respond-to($md) {
+    &__man--big {
+      display: inline;
+      right: 5%;
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  @include respond-to($lg) {
+    &__man--big {
+      display: inline;
+      width: 520px;
+      height: 580px;
+      position: absolute;
+      bottom: -20px;
+      right: 10%;
+    }
+  }
+}
+.concert-item {
+  margin-bottom: 25px;
+  margin-left: 40px;
+
+  p {
+    margin: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      border-radius: 6px;
+      left: -34px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #fff;
+      width: 4px;
+      height: 200px;
+      left: -30px;
+      top: -30px;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__place {
+    color: #fff;
+  }
+
+  @include respond-to($md) {
+    margin-bottom: 70px;
+  }
+}
