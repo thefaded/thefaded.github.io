@@ -1,93 +1,229 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Daniil Pankratev</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  </head>
-  <body>
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-      <!-- Header -->
-      <header id="header">
-	<div class="logo">
-	  <span class="icon fa-diamond"></span>
-	</div>
-	<div class="content">
-	  <div class="inner">
-	    <h1>Daniil Pankratev</h1>
-	    <p>Web Applications developer. Interesting in Computer Science and iOS Development.<br>
-	      I'm sicking of perfectionism so every single thing that I do – I do it best.<br>
-	      Everyday I learn something new. I belive in self-education.<br>
-	      If I can help you – be free to text me.</p>
-	  </div>
-	</div>
-	<nav>
-	  <ul>
-	    <!--<li><a href="#contact">Write Me</a></li>-->
-	  </ul>
-	</nav>
-      </header>
-
-      <!-- Main -->
-      <div id="main">
-	<!-- Contact -->
-	<article id="contact">
-	  <h2 class="major">Contact</h2>
-	  <form method="post" action="#">
-	    <div class="field half first">
-	      <label for="name">Name</label>
-	      <input type="text" name="name" id="name" />
-	    </div>
-	    <div class="field half">
-	      <label for="email">Email</label>
-	      <input type="text" name="email" id="email" />
-	    </div>
-	    <div class="field">
-	      <label for="message">Message</label>
-	      <textarea name="message" id="message" rows="4"></textarea>
-	    </div>
-	    <ul class="actions">
-	      <li><input type="submit" value="Send Message" class="special" /></li>
-	      <li><input type="reset" value="Reset" /></li>
-	    </ul>
-	  </form>
-	  <ul class="icons">
-	    <li><a href="https://telegram.me/pod_dubstep" class="icon fa-paper-plane"><span class="label">Telegram</span></a></li>
-	    <li><a href="https://twitter.com/POD_DUBSTEP" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-	    <li><a href="mailto:thepoddubstep@gmail.com" class="icon fa-envelope-o"><span class="label">Mail</span></a></li>
-	    <li><a href="https://github.com/theFaded" class="icon fa-github"><span class="label">GitHub</span></a></li>
-	  </ul>
-	</article>	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Soulvibes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery-menu.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+</head>
+<body class="container-big">
+  <!-- Header menu block -->
+  <div class="page-header">
+    <div class="container">
+      <nav class="page-header__nav">
+        <div class="page-header__nav--left">
+          <div class="header-logo">soulvibes</div>
+          <div class="header-button">
+            <button class="page-header__button hamburger  hamburger--3dx-r" type="button" id="menuButton">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="page-header__nav--right" id="menu">
+          <ul>
+            <li class="page-header__item"><a href="#home">Home</a></li>
+            <li class="page-header__item"><a href="#genres">Genres</a></li>
+            <li class="page-header__item"><a href="#events">Events</a></li>
+            <li class="page-header__item"><a href="#news">News</a></li>
+            <li class="page-header__item"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__container">
+        <h1 class="page-header__title">High Quality Internet Music Stations</h1>
       </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-	<ul class="icons">
-	  <li><a href="https://telegram.me/pod_dubstep" class="icon fa-paper-plane"><span class="label">Telegram</span></a></li>
-	  <li><a href="https://twitter.com/POD_DUBSTEP" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-	  <li><a href="mailto:thepoddubstep@gmail.com" class="icon fa-envelope-o"><span class="label">Mail</span></a></li>
-	  <li><a href="https://github.com/theFaded" class="icon fa-github"><span class="label">GitHub</span></a></li>
-          <li><a href="https://facebook.com/people/Daniil-Pankratev/100015444095685" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-	</ul>
-	<p class="copyright">© DANIIL PANKRATEV | 2017</p>
-      </footer>
-
     </div>
-
-    <!-- BG -->
-    <div id="bg"></div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-  </body>
+  </div>
+<!--   <div class="page-header">
+    <div class="container">
+      <nav class="page-header__nav-menu">
+        <div class="page-header__nav-menu--brand">soulvibes</div>
+        <div class="page-header__container">
+          <ul>
+            <li class="page-header__item"><a href="#home">Home</a></li>
+            <li class="page-header__item"><a href="#genres">Genres</a></li>
+            <li class="page-header__item"><a href="#events">Events</a></li>
+            <li class="page-header__item"><a href="#news">News</a></li>
+            <li class="page-header__item"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__title">High Quality Internet Music Stations</h1>
+    </div>
+  </div> -->
+  <!-- Genres block -->
+  <section class="genres container" id="genres">
+    <h1 class="genres__title">Genres Stations</h1>
+    <div class="genres-list">
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--trending" href="#"><span>Trending Top</span></a>
+      </div>
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--rock" href="#"><span>Rock</span></a>
+      </div>
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--rnb" href="#"><span>R n B</span></a>
+      </div>
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--alternative" href="#"><span>Alternative</span></a>
+      </div>
+    </div>
+    <div class="genres-list">
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--country" href="#"><span>Country</span></a>
+      </div>
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--pop" href="#"><span>Pop</span></a>
+      </div>
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--jazz" href="#"><span>Jazz</span></a>
+      </div>
+      <div class="genres-list__wrapper">
+        <a class="genres-list__item  genres-list__item--reggae" href="#"><span>Reggae</span></a>
+      </div>
+    </div>
+<!--     <div class="genres-list">
+      <div class="genres-list__wrapper">
+        <div class="genres-list__item"><a href="#">Trending Top</a></div>
+      </div>
+      <div class="genres-list__wrapper">
+        <div class="genres-list__item"><a href="#">Rock</a></div>
+      </div>
+      <div class="genres-list__wrapper">
+        <div class="genres-list__item"><a href="#">R n B</a></div>
+      </div>
+      <div class="genres-list__wrapper">
+        <div class="genres-list__item"><a href="#">Alternative</a></div>
+      </div>
+    </div> -->
+    <!-- <div class="genres-list">
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--trending" href="#">Trending Top</a>
+      </div>
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--rock" href="#">Rock</a>
+      </div>
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--rnb" href="#">R n B</a>
+      </div>
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--alternative" href="#">Alternative</a>
+      </div>
+    </div> -->
+<!--     <div class="genres-list">
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--country" href="#">Country</a>
+      </div>
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--pop" href="#">Pop</a>
+      </div>
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--jazz" href="#">Jazz</a>
+      </div>
+      <div class="genres-list__container">
+        <a class="genres-list__item genres-list__item--reggae" href="#">Reggae</a>
+      </div>
+    </div> -->
+    <div class="genres__button">
+      <button class="genres__button--big">Load More</button>
+    </div>
+  </section>
+  <!-- Upcoming events block -->
+  <section class="events" id="events">
+    <div class="container">
+      <h1 class="events__title">Upcoming events</h1>
+    </div>
+    <div class="concerts">
+      <div class="container">
+        <div class="concert-item">
+          <p class="concert-item__date">Wednesday / 22 Dec 2017 / 12:00 PM</p>
+          <p class="concert-item__title">Linkin Park</p>
+          <p class="concert-item__place">Ziggo Dome<br> De Passage 100, Amsterdam, Netherlands</p>
+        </div>
+        <div class="concert-item">
+          <p class="concert-item__date">Friday / 26 Jan 2018 / 19:00 PM</p>
+          <p class="concert-item__title">Burger Kill</p>
+          <p class="concert-item__place">Ziggo Dome<br> De Passage 100, Amsterdam, Netherlands</p>
+        </div>
+        <img class="concerts__man--big" src="src/blocks/events/img/man.png" width="520" height="580">
+      </div>
+    </div>
+  </section>
+  <!-- Latest news -->
+  <section class="news container" id="news">
+    <h1 class="news__title">Latest news</h1>
+      <div class="news-item">
+        <div class="news-item__container">
+          <p class="news-item__date">21 march 2017</p>
+          <h2 class="news-item__title">Lorem ipsum dolor sit amet</h2>
+          <p class="news-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="news-item__button">Read more</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-item__container">
+          <p class="news-item__date">19 april 2017</p>
+          <h2 class="news-item__title">Lorem ipsum dolor sit amet</h2>
+          <p class="news-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="news-item__button">Read more</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-item__container">
+          <p class="news-item__date">1 december 2017</p>
+          <h2 class="news-item__title">Lorem ipsum dolor sit amet</h2>
+          <p class="news-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="" class="news-item__button">Read more</a>
+        </div>
+      </div>
+  </section>
+  <!-- Contact us block -->
+  <section class="contacts">
+    <div class="container">
+      <h1 class="contacts__title">Contact Us</h1>
+    </div>
+    <div class="contacts__fluid">
+      <div class="container">
+        <div class="subscribe">
+          <h2 class="subscribe__title">Join Our Community</h2>
+          <p class="subscribe__content">
+            Be among the first to hear about news tracks, events, news and so much more!
+          </p>
+          <form>
+            <input class="subscribe__input" type="text" placeholder="Your email address">
+            <div class="subscribe--border">
+              <button class="subscribe__button">Subscribes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer block -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">Copyright © 2018 soulvibes. All rights reserved</p>
+      <div class="social-links">
+        <a href="https://facebook.com" class="social-links__fb">Facebook</a>
+        <a href="https://twitter.com" class="social-links__tw">Twitter</a>
+        <a href="https://instagram.com" class="social-links__inst">Instagram</a>
+        <a href="https://pinterest.com" class="social-links__pin">Pinterest</a>
+        <a href="https://youtube.com" class="social-links__yt">Youtube</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
